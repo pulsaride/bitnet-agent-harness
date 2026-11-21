@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "baseUrl": "http://127.0.0.1:15842",
+  "isolatedHome": "artifacts/pi/home",
+  "allowCatalog": false,
+  "allowPackageInstall": false,
+  "allowCredentialDiscovery": false,
+  "allowAmbientProjectDiscovery": false,
+  "allowFallbackInference": false,
+  "resourceRoots": [],
+  "extensionRoots": [],
+  "skillRoots": [],
+  "builtInTools": [],
+  "executionPolicy": "broker_only",
+  "modelMayAuthorizeExecution": false
+}

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "milestone": "A",
+  "architecture": "linux/amd64",
+  "image": {
+    "name": "bitnet-cpu",
+    "base": "ubuntu@sha256:9c7f200c07e3d4a03e7249d2c16bf66a51120fb876aa2242cf31451412543289",
+    "sourceRepository": "https://github.com/microsoft/BitNet.git",
+    "sourceRevision": "0b341e582afbf9e1011f24744b554c96a3477eb5",
+    "llamaCppRevision": "390c307752ab78fd8189f359d6954c9ba1be74af",
+    "kernel": "i2_s",
+    "gpuLayers": 0
+  },
+  "buildToolchain": {
+    "os": "Ubuntu 24.04",
+    "clang": "1:18.0-59~exp2",
+    "cmake": "3.28.3-1build7",
+    "git": "1:2.43.0-1ubuntu7.4",
+    "build-essential": "12.10ubuntu1",
+    "python3": "3.12.3-0ubuntu2.1",
+    "ca-certificates": "20260816ubuntu0.24.04.2"
+  },
+  "model": {
+    "repository": "microsoft/bitnet-b1.58-2B-4T-gguf",
+    "revision": "a1f2f1c765812aa8af3f6eda4a313707064bba15",
+    "filename": "ggml-model-i2_s.gguf",
+    "sizeBytes": 1187801280,
+    "sha256": "4221b252fdd5fd25e15847adfeb5ee88886506ba50b8a34548374492884c2162",
+    "contextTokens": 4096
+  },
+  "runtime": {
+    "host": "0.0.0.0",
+    "publishedHost": "127.0.0.1",
+    "port": 15842,
+    "threads": 8,
+    "contextTokens": 4096,
+    "maxPredictTokens": 256,
+    "nonRootUser": "bitnet:10001",
+    "readOnlyRootFilesystem": true
+  }
+}

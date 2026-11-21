@@ -1,0 +1,12 @@
+artifacts/
+.runtime/
+.models/
+.cache/
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+benchmarks/tasks/
+benchmarks/evaluator/
+benchmarks/workspaces/
+benchmarks/results/

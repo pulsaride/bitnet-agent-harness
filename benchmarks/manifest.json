@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "dbd817afb9292ded44eedcad59abc8a33f115e27",
+  "tasks": [
+    {
+      "id": "B01",
+      "prompt": "Fix identity collisions between different kind/coordinate boundaries while preserving the documented identity scheme.",
+      "snapshot": "tasks/B01/snapshot",
+      "targetPath": "platform/crates/core-ids/src/node_sig.rs",
+      "manifest": "tasks/B01/snapshot/manifest.json"
+    },
+    {
+      "id": "B02",
+      "prompt": "Fix truncated signatures: encode all 32 bytes as 64 lowercase hexadecimal characters.",
+      "snapshot": "tasks/B02/snapshot",
+      "targetPath": "platform/crates/core-ids/src/node_sig.rs",
+      "manifest": "tasks/B02/snapshot/manifest.json"
+    },
+    {
+      "id": "B03",
+      "prompt": "Restore LF, CRLF and CR event-stream framing without changing event content.",
+      "snapshot": "tasks/B03/snapshot",
+      "targetPath": "tools/probes/_smoke/sse.py",
+      "manifest": "tasks/B03/snapshot/manifest.json"
+    },
+    {
+      "id": "B04",
+      "prompt": "Preserve the last valid event ID between events; reset only data and event type.",
+      "snapshot": "tasks/B04/snapshot",
+      "targetPath": "tools/probes/_smoke/sse.py",
+      "manifest": "tasks/B04/snapshot/manifest.json"
+    },
+    {
+      "id": "B05",
+      "prompt": "Apply the documented event-stream compatibility exception only to legacy output.",
+      "snapshot": "tasks/B05/snapshot",
+      "targetPath": "tools/probes/_smoke/sse.py",
+      "manifest": "tasks/B05/snapshot/manifest.json"
+    },
+    {
+      "id": "B06",
+      "prompt": "Preserve literal Expires 0 and -1; normalize dates without changing ordinary headers.",
+      "snapshot": "tasks/B06/snapshot",
+      "targetPath": "tools/behaviour-harness/engine/response_headers.py",
+      "manifest": "tasks/B06/snapshot/manifest.json"
+    },
+    {
+      "id": "B07",
+      "prompt": "Strip servlet session identifiers while preserving context and resource boundaries.",
+      "snapshot": "tasks/B07/snapshot",
+      "targetPath": "tools/behaviour-harness/engine/response_headers.py",
+      "manifest": "tasks/B07/snapshot/manifest.json"
+    },
+    {
+      "id": "B08",
+      "prompt": "Two mixed header profiles must never count as equivalent; retain the other verdict categories.",
+      "snapshot": "tasks/B08/snapshot",
+      "targetPath": "tools/behaviour-harness/engine/response_headers.py",
+      "manifest": "tasks/B08/snapshot/manifest.json"
+    },
+    {
+      "id": "B09",
+      "prompt": "Count only SQL within scenario marks and reject truncated logs.",
+      "snapshot": "tasks/B09/snapshot",
+      "targetPath": "tools/behaviour-harness/engine/sql_count.py",
+      "manifest": "tasks/B09/snapshot/manifest.json"
+    },
+    {
+      "id": "B10",
+      "prompt": "Mark a side unsupported only if every counted scenario is silent. Preserve valid zero counts and input immutability.",
+      "snapshot": "tasks/B10/snapshot",
+      "targetPath": "tools/behaviour-harness/engine/sql_count.py",
+      "manifest": "tasks/B10/snapshot/manifest.json"
+    }
+  ],
+  "resourceEnvelope": {
+    "memory": "8G",
+    "jobs": 4
+  },
+  "generatedAt": "2026-11-21T19:57:29.929Z"
+}

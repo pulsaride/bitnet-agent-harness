@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "package": "@earendil-works/pi-coding-agent",
+  "version": "1.6.0",
+  "repository": "https://github.com/earendil-works/pi.git",
+  "gitHead": "faac585884ae2c013a6b1400f3e9e77f10b34bac",
+  "tarball": "https://registry.npmjs.org/@earendil-works/pi-coding-agent/-/pi-coding-agent-1.6.0.tgz",
+  "integrity": "sha512-zX1BVEsshx7A2MRuQ6jfr3RJGWw4Wn+vLq5ZfmlvS1RskhRmByaSZVXH/zcwRrWHO7qPgs98pNCbPOEti/t0fQ==",
+  "tarballSha256": "85d5de404e019e850c90ee9ac6dc6c16240da122fdce0314895608164030336b",
+  "packageJsonSha256": "ea92c5541390fa391ed7157f153a44e931b4aef52f811ebf25cfb0bbafcdb9bb",
+  "entrypointSha256": "4569157e6038be9840fa514db4b00a27fd0be9e3622cc7b49a281de6c027d7ff",
+  "sourceIdentityVerifiedAt": "2026-11-21"
+}

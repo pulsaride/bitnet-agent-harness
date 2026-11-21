@@ -1,0 +1,50 @@
+{
+  "name": "bitnet-agent-harness",
+  "version": "0.1.0",
+  "description": "Open-source CPU-first agent harness for lightweight local language models.",
+  "license": "Apache-2.0",
+  "private": false,
+  "keywords": ["bitnet", "agent", "harness", "cpu", "local-ai", "open-source"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pulsaride/bitnet-agent-harness.git"
+  },
+  "homepage": "https://github.com/pulsaride/bitnet-agent-harness#readme",
+  "bugs": {
+    "url": "https://github.com/pulsaride/bitnet-agent-harness/issues"
+  },
+  "type": "module",
+  "engines": { "node": ">=22.19.0" },
+  "bin": {
+    "bith": "bin/bith.mjs",
+    "bitnet-harness": "bin/bitnet-harness.mjs"
+  },
+  "scripts": {
+    "test": "node --experimental-strip-types --test tests/contracts/*.test.mjs tests/security/*.test.mjs tests/tools/*.test.mjs tests/skills/*.test.mjs tests/workflows/*.test.mjs tests/runtime/*.test.mjs tests/pi/*.test.mjs tests/cli/*.test.mjs tests/benchmarks/*.test.mjs",
+    "typecheck": "tsc --noEmit",
+    "probe": "node --experimental-strip-types scripts/pi-probe.mjs",
+    "bench:materialize": "node scripts/bench-materialize.mjs",
+    "bench:verify": "node scripts/bench-verify.mjs",
+    "bench:qualify": "node scripts/bench-qualify.mjs",
+    "bench:campaign": "node scripts/bench-campaign.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.0",
+    "typescript": "^5.9.3"
+  },
+  "files": [
+    "bin",
+    "src",
+    "examples",
+    "docs/runtime",
+    "docs/capabilities",
+    "docs/experiments",
+    "docs/pi",
+    "docs/capability-contracts.md",
+    "LICENSE",
+    "README.md",
+    "SECURITY.md",
+    "CONTRIBUTING.md",
+    "CODE_OF_CONDUCT.md"
+  ]
+}
